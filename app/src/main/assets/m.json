@@ -1,0 +1,54 @@
+{
+  "host":"10.0.200",
+  "password":"1234",
+  "rows":"6",
+  "cols":"4",
+  "pages": [
+    {
+      "name":"tv",
+      "device":"SONY",
+      "deviceCode":"15",
+      "buttons": [
+        {
+          "name":"button1",
+          "code": "240C"
+        },
+        {
+          "name":"button2",
+          "code": "140D"
+        },
+        {
+          "name":"button3",
+          "code": "350A"
+        },
+        {
+          "name":"",
+          "code":""
+        }
+      ]
+    },
+    {
+      "name":"dvd",
+      "device":"DVD",
+      "deviceCode":"16",
+      "buttons": [
+        {
+          "name":"",
+          "code":""
+        },
+        {
+          "name":"button1",
+          "code": "2400C"
+        },
+        {
+          "name":"button2",
+          "code": "1400D"
+        },
+        {
+          "name":"button3",
+          "code": "3500A"
+        }
+      ]
+    }
+  ]
+}
