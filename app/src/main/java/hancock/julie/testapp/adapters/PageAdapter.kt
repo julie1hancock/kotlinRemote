@@ -1,18 +1,20 @@
-package hancock.julie.testapp
+package hancock.julie.testapp.adapters
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import hancock.julie.testapp.R
 import hancock.julie.testapp.models.PageObj
-import kotlinx.android.synthetic.main.part_list_item.view.*
+import kotlinx.android.synthetic.main.page_list_item.view.*
 
 class PageAdapter (val pageItemList: List<PageObj>, val clickListener: (PageObj) -> Unit) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.part_list_item, parent, false)
+        val view = inflater.inflate(R.layout.page_list_item, parent, false)
+
         return PageViewHolder(view)
     }
 

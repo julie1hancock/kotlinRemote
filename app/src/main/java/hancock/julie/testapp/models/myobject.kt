@@ -8,7 +8,7 @@ data class myobject (
     var cols : Int,
     var pages : MutableList<PageObj>
 
-){
+)   {
     override fun toString() : String{
         var ss :String = "%s/msg?...%s\n".format(host,password)
         for(i in 0..(pages.size-1)){
@@ -17,6 +17,8 @@ data class myobject (
         }
         return ss
     }
+    fun getPageFromName(name:String) = pages.find { it.name == name }
+
 }
 
 

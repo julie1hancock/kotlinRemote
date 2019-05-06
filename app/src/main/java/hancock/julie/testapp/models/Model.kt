@@ -61,6 +61,7 @@ object  Model {
         return true
     }
 
+    fun getPageByName(name:String) = singleton.getPageFromName(name)
 
 }
 
